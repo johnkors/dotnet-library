@@ -8,7 +8,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Setup .NET
+      - name: Setup .NET 5
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+      - name: Setup .NET 6
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 6.0.x
@@ -17,4 +21,4 @@ jobs:
       - name: Build
         run: dotnet build --no-restore source
       - name: Test
-        run: dotnet test --no-build --verbosity normal source
+        run: dotnet test --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --logger "GitHubActions;report-warnings=false"
