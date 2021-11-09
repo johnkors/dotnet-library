@@ -21,4 +21,4 @@ jobs:
       - name: Build
         run: dotnet build --no-restore source
       - name: Test
-        run: dotnet test --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --logger "GitHubActions;report-warnings=false"
+        run: dotnet test source --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --logger "GitHubActions;report-warnings=false"
