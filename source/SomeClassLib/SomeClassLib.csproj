@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <Authors>John Korsnes</Authors>
     <Description>This is a sample classlib published via the template repo</Description>
@@ -12,6 +13,11 @@
     <PackageProjectUrl>https://github.com/johnkors/dotnet-library</PackageProjectUrl>
     <License>https://github.com/johnkors/dotnet-library/blob/main/LICENSE</License>
     <RepositoryUrl>https://github.com/johnkors/dotnet-library</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DotNet6Version>6.0.0</DotNet6Version>
+    <DotNet5Version>5.0.0</DotNet5Version>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
