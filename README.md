@@ -1,14 +1,23 @@
 # dotnet-library
 
-Template repo for setting up a simple .NET library with
+Template repo for setting up a simple .NET library show casing some common use cases:
 
-- Unit tests via Xunit
+
 - GitHub actions (CI, deploy)
-- Pre-release: publishing pre-release versions to nuget.org with semver-versioning via GitVersion
-- Release: publish release version to nuget.org with semver-versioning via GitVersion. Publish a Github release w/ release notes using the GitHub Release Notes API.
+  - CI : Restore, build & unit tests via Xunit
+  - Pre-release:
+      - Automated publishing of pre-release versions to nuget.org
+      - Semver-versioning via GitVersion
+      - Manually triggered workflow
+  - Release:
+      - Same as Pre-release, + publish a Github release w/ release notes using the GitHub Release Notes API.
 - A sensible `.editorconfig` for csharp
 - A sensible `.gitignore`for .NET projects
-- MIT License
+- Commonly setup Nuget package contents:
+    - Package icon (embedded in nuget)
+    - Readme showing in nuget.org (embedded in nuget),
+    - Multi-targeting and conditional dependencies dep on TFM
 - Funding for Github Sponsors
-- Nuget package: Package icon, readme for nuget.org, multi-targeting
+- MIT License
+
 
