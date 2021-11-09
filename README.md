@@ -1,6 +1,14 @@
 # dotnet-library
 
-Template repo for setting up a simple .NET library show casing some common use cases:
+### Sample badges
+[![Build](https://github.com/johnkors/dotnet-library/workflows/CI/badge.svg)](https://github.com/johnkors/dotnet-library/actions)
+ [![NuGet](https://img.shields.io/nuget/v/SomeClassLib.svg)](https://www.nuget.org/packages/SomeClassLib/)
+[![NuGet](https://img.shields.io/nuget/dt/SomeClassLib.svg)](https://www.nuget.org/packages/SomeClassLib/)
+
+
+# What is this?
+
+Template repo for setting up a simple .NET library (nuget) show casing some common use cases:
 
 
 - GitHub actions (CI, deploy)
@@ -17,7 +25,7 @@ Template repo for setting up a simple .NET library show casing some common use c
     - Package icon (embedded in nuget)
     - Readme showing in nuget.org (embedded in nuget),
     - Multi-targeting and conditional dependencies dep on TFM
-- Funding for Github Sponsors
+- Funding for GitHub Sponsors
 - MIT License
 
 
