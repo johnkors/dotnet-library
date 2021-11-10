@@ -5,6 +5,6 @@ public class UnitTest1
     [Fact]
     public void Test1()
     {
-        Assert.Equal("Hello, John", Class1.Greet("John"));
+        Assert.Equal("Hello, JOHN", Class1.Greet("John"));
     }
 }
