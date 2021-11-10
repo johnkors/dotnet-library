@@ -37,4 +37,17 @@
     <None Include="../../README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SomePeerDependency\SomePeerDependency.csproj" PrivateAssets="All" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);IncludeP2PAssets</TargetsForTfmSpecificBuildOutput>
+  </PropertyGroup>
+  <Target Name="IncludeP2PAssets">
+    <ItemGroup>
+        <BuildOutputInPackage Include="$(OutputPath)SomePeerDependency.dll" />
+    </ItemGroup>
+</Target>
+
 </Project>
