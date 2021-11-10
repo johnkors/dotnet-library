@@ -25,6 +25,7 @@ Template repo for setting up a simple .NET library (nuget) show casing some comm
     - Package icon (embedded in nuget)
     - Readme showing in nuget.org (embedded in nuget),
     - Multi-targeting and conditional dependencies dep on TFM
+    - Bundling internal dependencies: peer dependencies/transient dependencies (project refs) as dlls in main nuget without publish of peer to nuget.org
 - Funding for GitHub Sponsors
 - MIT License
 
