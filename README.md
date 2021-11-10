@@ -25,7 +25,7 @@ Template repo for setting up a simple .NET library (nuget) show casing some comm
     - Package icon (embedded in nuget)
     - Readme showing in nuget.org (embedded in nuget),
     - Multi-targeting and conditional dependencies dep on TFM
-    - [Bundling internal dependencies: peer dependencies/transient dependencies (project refs) as dlls in main nuget without publish of peer to nuget.org](https://github.com/johnkors/dotnet-library/commit/979faec234391ba2fc807fc32d98909b50ed813b#diff-9f27cbfc298ab912ba6c38cf8282dfee1ea26c64b74771f899a1142a05e09cd4). See #2.
+    - [Bundling internal dependencies: peer dependencies/transient dependencies (project refs) as dlls in main nuget without publish of peer to nuget.org](https://github.com/johnkors/dotnet-library/commit/979faec234391ba2fc807fc32d98909b50ed813b#diff-9f27cbfc298ab912ba6c38cf8282dfee1ea26c64b74771f899a1142a05e09cd4). See [#2](https://github.com/johnkors/dotnet-library/pull/2).
 - Funding for GitHub Sponsors
 - MIT License
 
