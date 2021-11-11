@@ -18,7 +18,7 @@ Template repo for setting up a simple .NET library (nuget) show casing some comm
       - Semver-versioning via GitVersion
       - Manually triggered workflow
   - Release:
-      - Same as Pre-release, + publish a Github release w/ release notes using the GitHub Release Notes API.
+      - Same as Pre-release, + publish a [Github release w/ release notes using the GitHub Release Notes API](https://github.com/johnkors/dotnet-library/releases/tag/0.1.1).
 - A sensible `.editorconfig` for csharp
 - A sensible `.gitignore`for .NET projects
 - Commonly setup Nuget package contents:
@@ -38,6 +38,8 @@ The GitHub actions requirements:
 - For publish to work, set a GitHub Secret `NUGETORGAPIKEY` for nuget.org
 
 ## Conventions
-- It builds & tests projects in a sln found in `/source
+- It builds & tests projects part of the sln found in `/source`
 - Renaming the sln file does not impact the GitHub actions.
 - Renaming any projects does not impact the GitHub actions.
+- Publishing a pre-release version is done via manually triggering the `prerelease` GH action in _any_ branch (input to the trigger). Versioning handled automatically by GitVersion.
+- Publishing a release version is done the same way: manually triggering the `release` GH action.
