@@ -30,3 +30,14 @@ Template repo for setting up a simple .NET library (nuget) show casing some comm
 - MIT License
 
 
+# Using the template
+
+## Requirements
+The GitHub actions requirements:
+- The sln file must be in `/source`
+- For publish to work, set a GitHub Secret `NUGETORGAPIKEY` for nuget.org
+
+## Conventions
+- It builds & tests projects in a sln found in `/source
+- Renaming the sln file does not impact the GitHub actions.
+- Renaming any projects does not impact the GitHub actions.
