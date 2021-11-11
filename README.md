@@ -38,6 +38,8 @@ The GitHub actions requirements:
 - For publish to work, set a GitHub Secret `NUGETORGAPIKEY` for nuget.org
 
 ## Conventions
-- It builds & tests projects in a sln found in `/source
+- It builds & tests projects part of the sln found in `/source`
 - Renaming the sln file does not impact the GitHub actions.
 - Renaming any projects does not impact the GitHub actions.
+- Publishing a pre-release version is done via manually triggering the `prerelease` GH action in _any_ branch (input to the trigger). Versioning handled automatically by GitVersion.
+- Publishing a release version is done the same way: manually triggering the `release` GH action.
