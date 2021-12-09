@@ -7,11 +7,11 @@
     <Nullable>enable</Nullable>
     <Authors>John Korsnes</Authors>
     <Description>This is a sample classlib published via the template repo</Description>
+    <PackageTags>library</PackageTags>
     <PackageIcon>icon.512x512.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageTags>library</PackageTags>
+    <License>LICENSE</License>
     <PackageProjectUrl>https://github.com/johnkors/dotnet-library</PackageProjectUrl>
-    <License>https://github.com/johnkors/dotnet-library/blob/main/LICENSE</License>
     <RepositoryUrl>https://github.com/johnkors/dotnet-library</RepositoryUrl>
   </PropertyGroup>
 
@@ -35,6 +35,7 @@
   <ItemGroup>
     <None Include="../../images/icon.512x512.png" Pack="true" PackagePath="" />
     <None Include="../../README.md" Pack="true" PackagePath="" />
+    <None Include="../../LICENSE" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
