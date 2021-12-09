@@ -11,6 +11,7 @@
     <PackageIcon>icon.512x512.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <License>LICENSE</License>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/johnkors/dotnet-library</PackageProjectUrl>
     <RepositoryUrl>https://github.com/johnkors/dotnet-library</RepositoryUrl>
   </PropertyGroup>
