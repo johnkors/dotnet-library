@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
@@ -18,7 +18,7 @@
 
   <PropertyGroup>
     <DotNet6Version>6.0.0</DotNet6Version>
-    <DotNet5Version>5.0.0</DotNet5Version>
+    <DotNet7Version>7.0.0</DotNet7Version>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
@@ -27,10 +27,10 @@
     <PackageReference Include="Microsoft.Extensions.Options" Version="$(DotNet6Version)" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'net5.0'">
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(DotNet5Version)" />
-    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(DotNet5Version)" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="$(DotNet5Version)" />
+  <ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(DotNet7Version)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(DotNet7Version)" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="$(DotNet7Version)" />
   </ItemGroup>
 
   <ItemGroup>
