@@ -28,7 +28,7 @@ jobs:
             6.0.x
             7.0.x
       - name: Pack
-        run: dotnet pack source /p:Version=${{ steps.gitversion.outputs.majorMinorPatch }} /p:InformationalVersion=${{ steps.gitversion.outputs.informationalVersion }} /p:PackageReleaseNotes="https://github.com/$GITHUB_REPOSITORY/releases/tag/${{ steps.gitversion.outputs.majorMinorPatch }}" -o ./releases
+        run: dotnet pack source -c Release /p:Version=${{ steps.gitversion.outputs.majorMinorPatch }} /p:InformationalVersion=${{ steps.gitversion.outputs.informationalVersion }} /p:PackageReleaseNotes="https://github.com/$GITHUB_REPOSITORY/releases/tag/${{ steps.gitversion.outputs.majorMinorPatch }}" -o ./releases
       - name: Publish
         run: dotnet nuget push ./releases/**/*.nupkg -k=${{ secrets.NUGETORGAPIKEY }} -s=nuget.org
       - name: Create Release
