@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>net9.0;net10.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
@@ -17,20 +17,22 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <DotNet8Version>8.0.0</DotNet8Version>
-    <DotNet9Version>9.0.0</DotNet9Version>
+    <DotNet9Version>net9.0</DotNet9Version>
+    <DotNet10Version>net10.0</DotNet10Version>
+    <DotNet9PackageVersion>9.0.0</DotNet9PackageVersion>
+    <DotNet10PackageVersion>10.0.0</DotNet10PackageVersion>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == '$(DotNet8Version)'">
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(DotNet8Version)" />
-    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(DotNet8Version)" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="$(DotNet8Version)" />
+  <ItemGroup Condition="'$(TargetFramework)' == '$(DotNet9Version)'">
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(DotNet9PackageVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(DotNet9PackageVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="$(DotNet9PackageVersion)" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == '$(DotNet9Version)'">
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(DotNet9Version)" />
-    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(DotNet9Version)" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="$(DotNet9Version)" />
+  <ItemGroup Condition="'$(TargetFramework)' == '$(DotNet10Version)'">
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(DotNet10PackageVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(DotNet10PackageVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="$(DotNet10PackageVersion)" />
   </ItemGroup>
 
   <ItemGroup>
